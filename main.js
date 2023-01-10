@@ -62,6 +62,7 @@ const app = Vue.createApp({
         this.currentindex = 0;
       }
     },
+    changePic() {},
   },
 });
 

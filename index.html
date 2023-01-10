@@ -34,7 +34,7 @@
           <i @click="gotoNext()"  class="bi bi-arrow-right-circle"></i>
            </div>
         <div id="thumb" class="thumb">
-          <img v-for="(pic,i) in pictures"  :src="pic.image" alt="pic.title" :class="{'active': i === currentindex}">
+          <img v-for="(pic,i) in pictures" @click="changePic()"  :src="pic.image" alt="pic.title" :class="{'active': i === currentindex}">
           </div>
         </div>
       </div>

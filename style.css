@@ -34,6 +34,10 @@
   border-radius: 10px;
   transition: 0.5s;
 }
+.thumb img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 .active {
   border: 2px solid black;
   transform: scale(1.1);
@@ -42,13 +46,13 @@
   cursor: pointer;
   position: absolute;
   top: 250px;
-  left: 50px;
+  left: 30px;
   font-size: 40px;
 }
 .arrow-right {
   cursor: pointer;
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 250px;
   font-size: 40px;
 }
