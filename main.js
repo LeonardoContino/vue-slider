@@ -49,6 +49,17 @@ const app = Vue.createApp({
       ],
     };
   },
+  methods: {
+    gotoPrev() {
+      this.currentindex--;
+      if (this.currentindex === 0) {
+      }
+    },
+    gotoNext() {
+      this.currentindex++;
+    },
+    notPrev() {},
+  },
 });
 
 app.mount("#root");
