@@ -53,6 +53,7 @@ const app = Vue.createApp({
     gotoPrev() {
       this.currentindex--;
       if (this.currentindex === 0) {
+        this.currentindex;
       }
     },
     gotoNext() {
