@@ -18,17 +18,25 @@
   padding: 10px;
   color: black;
 }
+.thumb {
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .thumb img {
-  height: 100px;
-  width: 150px;
-  margin: 10px;
+  height: 100%;
+  width: 19%;
   object-fit: cover;
   cursor: pointer;
 
-  border-radius: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 .active {
   border: 2px solid black;
+  transform: scale(1.1);
 }
 .arrow-left {
   cursor: pointer;

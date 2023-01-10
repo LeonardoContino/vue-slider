@@ -26,15 +26,15 @@
            </div>   
         <div id="big-img" class="big-img border mb-3">
           
-             <img v-for="(pic,i) in pictures" :src="pic.image" alt="pic.title" v-show="i === currentindex">
+             <img v-for="(pic,i) in pictures"   :src="pic.image" alt="pic.title" v-show="i === currentindex">
              
         
         </div>
         <div id="arrow-right" class="arrow-right">
           <i @click="gotoNext()"  class="bi bi-arrow-right-circle"></i>
            </div>
-        <div id="thumb" class="thumb d-flex row-cols-5">
-          <img v-for="(pic,i) in pictures" :src="pic.image" alt="pic.title" :class="{'active': i === currentindex}">
+        <div id="thumb" class="thumb">
+          <img v-for="(pic,i) in pictures"  :src="pic.image" alt="pic.title" :class="{'active': i === currentindex}">
           </div>
         </div>
       </div>
