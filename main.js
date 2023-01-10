@@ -53,12 +53,12 @@ const app = Vue.createApp({
     gotoPrev() {
       this.currentindex--;
       if (this.currentindex < 0) {
-        this.currentindex = this.currentindex.lenght - 1;
+        this.currentindex = this.pictures.length - 1;
       }
     },
     gotoNext() {
       this.currentindex++;
-      if (this.currentindex === this.currentindex.lenght) {
+      if (this.currentindex === this.pictures.length) {
         this.currentindex = 0;
       }
     },
