@@ -22,7 +22,7 @@
     <section class="container" id="root">
       <div class="carosel p-5">
         <div id="arrow-left" class="arrow-left">
-          <i @click="gotoPrev"    class="bi bi-arrow-left-circle"></i>
+          <i @click="gotoPrev()"    class="bi bi-arrow-left-circle"></i>
            </div>   
         <div id="big-img" class="big-img border mb-3">
           
@@ -31,7 +31,7 @@
         
         </div>
         <div id="arrow-right" class="arrow-right">
-          <i @click="gotoNext"  class="bi bi-arrow-right-circle"></i>
+          <i @click="gotoNext()"  class="bi bi-arrow-right-circle"></i>
            </div>
         <div id="thumb" class="thumb d-flex row-cols-5">
           <img v-for="(pic,i) in pictures" :src="pic.image" alt="pic.title" :class="{'active': i === currentindex}">

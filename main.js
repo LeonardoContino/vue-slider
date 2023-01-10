@@ -52,14 +52,16 @@ const app = Vue.createApp({
   methods: {
     gotoPrev() {
       this.currentindex--;
-      if (this.currentindex === 0) {
-        this.currentindex;
+      if (this.currentindex < 0) {
+        this.currentindex = this.currentindex.lenght - 1;
       }
     },
     gotoNext() {
       this.currentindex++;
+      if (this.currentindex === this.currentindex.lenght) {
+        this.currentindex = 0;
+      }
     },
-    notPrev() {},
   },
 });
 
