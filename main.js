@@ -49,6 +49,7 @@ const app = Vue.createApp({
       ],
     };
   },
+  computed: {},
   methods: {
     gotoPrev() {
       this.currentindex--;
@@ -62,7 +63,9 @@ const app = Vue.createApp({
         this.currentindex = 0;
       }
     },
-    changePic() {},
+    gotoThis(index) {
+      this.currentindex = index;
+    },
   },
 });
 
