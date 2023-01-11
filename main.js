@@ -67,6 +67,9 @@ const app = Vue.createApp({
       this.currentindex = index;
     },
   },
+  mounted() {
+    setInterval(this.gotoNext, 3000);
+  },
 });
 
 app.mount("#root");
